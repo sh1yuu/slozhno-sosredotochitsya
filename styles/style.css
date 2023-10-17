@@ -2,4 +2,103 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
+.header {
+  padding: 10px;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  margin-block-start: 31px;
+}
+
+.header__theme-menu {
+  display: grid;
+  justify-content: end;
+  color: var(--title-color);
+  font-size: var(--font-size);
+}
+
+.decorated-element {
+  text-transform: uppercase;
+  font-weight: var(--font-weight);
+  color: var(--accent-color);
+  position: absolute;
+  margin-inline-start: 294px;
+  margin-inline-end: 28px;
+}
+
+.decorated-element::after {
+  content: '';
+  position: absolute;
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--alternate-bg-color);
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
+  border-radius: 50%;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+  justify-content: end;
+}
+
+.header__theme-menu-item:first-of-type {
+  margin-block-start: 40px;
+}
+
+.header__theme-menu-list::before {
+  content: '';
+  display: block;
+  justify-self: end;
+  inline-size: 25px;
+  block-size: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  text-transform: lowercase;
+  background-color: inherit;
+  padding-inline-start: 13px;
+  padding-inline-end: 13px;
+  font-weight: var(--font-weight);
+  border: none;
+}
+
+.header__theme-menu-button:active {
+  outline: 1px solid var(--accent-color);
+}
+
+.header__title {
+  color: var(--header-title-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: var(--line-height);
+  margin-block-end: 55px;
+  margin-block-start: 65px;
+}
+
+.title-decor {
+  color: var(--alternate-color);
+  background-color: var(--alternate-bg-color);
+}
+
+.header__description-text {
+  font-weight: var(--title-font-weight);
 }
