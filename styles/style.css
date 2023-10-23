@@ -75,6 +75,7 @@
   display: grid;
   gap: 10px;
   justify-content: end;
+  appearance: none;
 }
 
 
@@ -150,6 +151,10 @@
   text-decoration: underline;
 }
 
+.ref__info:focus {
+  outline: none;
+}
+
 .ref__info:focus-visible {
   border: none;
   outline: 1px solid var(--color);
@@ -162,6 +167,9 @@
 
 .image__item {
   object-fit: cover;
+  object-position: center;
+  height: 100%;
+  max-width: 100%;
 }
 
 .footer {
@@ -236,10 +244,6 @@
   .image__container {
     display: grid;
     gap: 10px;
-  }
-
-  .image__item {
-    width: min(100%, 355px);
   }
 
   .footer {
@@ -331,31 +335,23 @@
 
   .image-1 {
     grid-area: a;
-    width: min(100%, 479px);
+
   }
 
   .image-2 {
     grid-area: b;
-    width: min(100%, 229px);
-    height: min(100%, 441px);
   }
 
   .image-3 {
     grid-area: c;
-    width: min(100%, 229px);
-    height: min(100%, 568px);
   }
 
   .image-4 {
     grid-area: d;
-    width: min(100%, 230px);
-    height: min(100%, 230px);
   }
 
   .image-5 {
     grid-area: e;
-    width: min(100%, 479px);
-    height: min(100%, 318px);
   }
 
   .footer::before {
@@ -465,31 +461,23 @@
 
   .image-1 {
     grid-area: a;
-    width: min(100%, 649px);
   }
 
   .image-2 {
     grid-area: b;
-    width: min(100%, 315px);
-    height: min(100%, 595px);
+
   }
 
   .image-3 {
     grid-area: c;
-    width: min(100%, 315px);
-    height: min(100%, 768px);
   }
 
   .image-4 {
     grid-area: d;
-    width: min(100%, 315px);
-    height: min(100%, 315px);
   }
 
   .image-5 {
     grid-area: e;
-    width: min(100%, 649px);
-    height: min(100%, 428px);
   }
 
   .footer::before {
