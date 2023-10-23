@@ -7,6 +7,7 @@
   font-family: var(--font-family, sans-serif);
   font-weight: var(--font-weight);
   line-height: var(--line-height);
+  background-color: var(--accent-bg-color);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -261,7 +262,6 @@
   .header {
     display: grid;
     padding: 20px;
-    margin-block-end: 60px;
   }
 
   .header__theme-menu::after {
@@ -296,6 +296,7 @@
   .section-first {
     display: grid;
     grid-template-columns: 32% 2fr;
+    margin-block-start: 60px;
   }
 
   .accent-section {
@@ -365,7 +366,7 @@
   }
 
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .footer::after {
@@ -377,7 +378,6 @@
   .header {
     display: grid;
     padding: 20px;
-    margin-block-end: 60px;
   }
 
   .header__theme-menu::before {
@@ -424,6 +424,7 @@
   .section-first {
     display: grid;
     grid-template-columns: 32% 2fr;
+    margin-block-start: 60px;
   }
 
   .section-second {
