@@ -3,21 +3,21 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   color: var(--color);
-  font-size: var(--font-size);
+  font-size: var(--font-size, 18px);
   font-family: var(--font-family, sans-serif);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
-  background-color: var(--accent-bg-color);
+  font-weight: var(--font-weight, 400);
+  line-height: var(--line-height, 130%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
+  cursor: default;
 }
 
 .font {
-  font-size: var(--font-size);
-  font-weight: var(--accent-font-weight);
+  font-size: var(--font-size, 18px);
+  font-weight: var(--accent-font-weight, 700);
 }
 
 .header {
@@ -27,7 +27,6 @@
 
 .header__theme-menu {
   display: grid;
-  font-size: var(--font-size);
 }
 
 .header__theme-menu::before {
@@ -78,6 +77,7 @@
   justify-content: end;
 }
 
+
 .header__theme-menu-button_active {
   pointer-events: none;
 }
@@ -88,6 +88,7 @@
 
 .header__theme-menu-button:focus-visible {
   text-decoration-line: underline;
+  outline: none;
 }
 
 .header__theme-menu-button {
@@ -108,7 +109,7 @@
   color: var(--header-title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   text-shadow: 4px 4px 0 var(--accent-color);
-  line-height: var(--accent-line-height);
+  line-height: var(--accent-line-height, 82.5%);
 }
 
 .title-decor {
@@ -117,7 +118,7 @@
 }
 
 .header__description-text {
-  font-weight: var(--accent-font-weight);
+  font-weight: var(--accent-font-weight, 700);
 }
 
 .section {
@@ -142,11 +143,11 @@
 
 .ref__info {
   text-decoration: none;
-  text-shadow: 2px 2px var(--accent-color);
+  text-shadow: 2px 2px var(--alternate-bg-color);
 }
 
 .ref__info:hover {
-  text-decoration-line: underline;
+  text-decoration: underline;
 }
 
 .ref__info:focus-visible {
@@ -155,8 +156,8 @@
 }
 
 .about__title-description {
-  font-weight: var(--font-weight);
-  font-size: var(--font-size);
+  font-weight: var(--font-weight, 400);
+  font-size: var(--font-size, 18px);
 }
 
 .image__item {
@@ -174,7 +175,7 @@
   color: var(--header-title-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 2px 2px 0 var(--accent-color);
-  line-height: var(--accent-line-height);
+  line-height: var(--accent-line-height, 82.5%);
 }
 
 .footer::before {

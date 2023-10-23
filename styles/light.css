@@ -6,6 +6,7 @@
 :root.theme-light {
   --color: #353430;
   --accent-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.40);
   --alternate-color: #353430;
   --header-title-color: #FFC2E6;
   --accent-bg-color: #FFF1F7;
@@ -24,11 +25,17 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --color: #353430;
+  --accent-color: #353430;
+  --alternate-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.40);
+  --header-title-color: #FFC2E6;
+  --accent-bg-color: #FFF1F7;
+  --alternate-bg-color: #FF8DCB;
   background-image: url(../images/cover-image-light.png);
 }
 
-.theme_light.header__theme-menu-list {
-  color: var(--color, #353430);
+.page.theme_light .decorated-element {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
