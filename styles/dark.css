@@ -25,7 +25,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-color: : var(--accent-bg-color);
+  background-color: var(--accent-bg-color);
   --color: #F1B2CE;
   --accent-color: #FF0070;
   --hover-color: rgba(255, 0, 112, 0.40);
