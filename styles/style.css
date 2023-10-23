@@ -7,6 +7,7 @@
   font-family: var(--font-family, sans-serif);
   font-weight: var(--font-weight, 400);
   line-height: var(--line-height, 130%);
+  background-image: url(../images/cover-image.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
