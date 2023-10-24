@@ -11,6 +11,8 @@
   --accent-bg-color: #000028;
   --alternate-bg-color: #FF0070;
   --font-size: 18px;
+  --accent-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --alternate-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --font-weight: 400;
   --accent-font-weight: 700;
   --font-family: 'IBM Plex mono';
