@@ -25,6 +25,7 @@
   display: grid;
   position: relative;
   min-height: 668px;
+  height: 100vh;
 }
 
 .header__theme-menu {
@@ -186,6 +187,7 @@
 .footer {
   display: grid;
   min-height: 668px;
+  height: 100vh;
 }
 
 .footer__title {
