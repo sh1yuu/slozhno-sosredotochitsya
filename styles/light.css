@@ -9,6 +9,7 @@
   --hover-color: rgba(50, 49, 45, 0.40);
   --alternate-color: #353430;
   --header-title-color: #FFC2E6;
+  --accent-header-text-shadow: #FF0070;
   --accent-bg-color: #FFF1F7;
   --alternate-bg-color: #FF8DCB;
   --font-size: 18px;
@@ -31,12 +32,27 @@
   --hover-color: rgba(50, 49, 45, 0.40);
   --header-title-color: #FFC2E6;
   --accent-bg-color: #FFF1F7;
+  --accent-header-text-shadow: #FF0070;
   --alternate-bg-color: #FF8DCB;
   background-image: url(../images/cover-image-light.png);
 }
 
 .page.theme_light .decorated-element {
   display: none;
+}
+
+@media (375px < width < 1024px) {
+  .header__title {
+    color: var(--header-title-color);
+    text-shadow: 4px 4px 0 var(--alternate-bg-color);
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__title {
+    color: var(--header-title-color);
+    text-shadow: 4px 4px 0 var(--accent-header-text-shadow);
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -54,5 +70,9 @@
     --font-family: 'IBM Plex mono';
     --accent-line-height: 82.5%;
     --line-height: 130%;
+  }
+
+  .decorated-element {
+    display: none;
   }
 }

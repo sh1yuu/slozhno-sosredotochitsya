@@ -86,6 +86,10 @@
   pointer-events: none;
 }
 
+.header__theme-menu-button_active:disabled {
+  outline: 1px solid var(--accent-color);
+}
+
 .header__theme-menu-button:hover {
   outline: 1px solid var(--hover-color);
 }
@@ -95,7 +99,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  text-decoration-line: underline;
+  border-block-end: 1px solid var(--accent-color);
   outline: none;
 }
 
@@ -344,7 +348,7 @@
     display: grid;
     justify-items: end;
     grid-template-rows: 47px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   }
 
   .about-accent {
