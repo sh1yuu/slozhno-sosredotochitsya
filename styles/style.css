@@ -149,7 +149,7 @@
   gap: 20px;
 }
 
-.about-alternate{
+.about-alternate {
   display: grid;
   gap: 20px;
 }
@@ -246,7 +246,7 @@
     display: grid;
     gap: 10px;
     padding-inline-start: 10px;
-    padding-inline-end: 10px;display: grid;
+    padding-inline-end: 10px;
     margin-block-end: 40px;
   }
 
@@ -355,6 +355,7 @@
     position: relative;
     top: 0px;
     right: 20px;
+    font-size: var(--alternate-font-size);
   }
 
   .decorated-zone::before {
@@ -370,11 +371,6 @@
   .decorated-element {
     top: 20px;
     right: 20px;
-  }
-
-  .header__title {
-    font-size: var(--alternate-font-size);
-
   }
 
   .header__description-text {

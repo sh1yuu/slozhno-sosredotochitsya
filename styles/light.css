@@ -42,7 +42,7 @@
 
   .footer__title {
     text-shadow: 4px 4px 0 var(--accent-header-text-shadow);
-  } 
+  }
 }
 
 @media (prefers-color-scheme: light) {
