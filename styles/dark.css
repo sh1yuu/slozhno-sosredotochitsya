@@ -4,22 +4,6 @@
   переключая тему
 */
 
-:root.theme_dark {
-  --color: #F1B2CE;
-  --accent-color: #FF0070;
-  --hover-color: rgba(255, 0, 112, 0.40);
-  --alternate-color: #000028;
-  --header-title-color: #DB00FF;
-  --accent-bg-color: #000028;
-  --alternate-bg-color: #FF0070;
-  --font-size: 18px;
-  --font-weight: 400;
-  --accent-font-weight: 700;
-  --font-family: 'IBM Plex mono';
-  --accent-line-height: 82.5%;
-  --line-height: 130%;
-}
-
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -38,4 +22,10 @@
 
 .page.theme_dark .decorated-element {
   display: grid;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    background-image: url(../images/cover-image-dark.png);
+  }
 }

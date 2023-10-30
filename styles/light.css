@@ -3,22 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-light {
-  --color: #353430;
-  --accent-color: #353430;
-  --hover-color: rgba(50, 49, 45, 0.40);
-  --alternate-color: #353430;
-  --header-title-color: #FFC2E6;
-  --accent-header-text-shadow: #FF0070;
-  --accent-bg-color: #FFF1F7;
-  --alternate-bg-color: #FF8DCB;
-  --font-size: 18px;
-  --font-weight: 400;
-  --accent-font-weight: 700;
-  --font-family: 'IBM Plex mono';
-  --accent-line-height: 82.5%;
-  --line-height: 130%;
-}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
@@ -43,26 +27,22 @@
 
 @media (375px < width < 1024px) {
   .header__title {
-    color: var(--header-title-color);
     text-shadow: 4px 4px 0 var(--alternate-bg-color);
   }
 
   .footer__title {
-    color: var(--header-title-color);
     text-shadow: 4px 4px 0 var(--alternate-bg-color);
   }
 }
 
 @media (min-width: 1024px) {
   .header__title {
-    color: var(--header-title-color);
     text-shadow: 4px 4px 0 var(--accent-header-text-shadow);
   }
 
   .footer__title {
-    color: var(--header-title-color);
     text-shadow: 4px 4px 0 var(--accent-header-text-shadow);
-  }
+  } 
 }
 
 @media (prefers-color-scheme: light) {
@@ -74,12 +54,17 @@
     --header-title-color: #FFC2E6;
     --accent-bg-color: #FFF1F7;
     --alternate-bg-color: #FF8DCB;
+    --accent-header-text-shadow: #FF0070;
     --font-size: 18px;
     --font-weight: 400;
     --accent-font-weight: 700;
     --font-family: 'IBM Plex mono';
     --accent-line-height: 82.5%;
     --line-height: 130%;
+  }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
   }
 
   .decorated-element {

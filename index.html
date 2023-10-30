@@ -18,8 +18,8 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <span class="decorated-element" aria-hidden="true">rec</span>
       <nav class="header__theme-menu">
-        <span class="decorated-element" aria-hidden="true">rec</span>
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
@@ -52,9 +52,9 @@
       </p>
     </header>
     <main class="main">
-      <section class="section section-column">
+      <section class="section section-accent">
         <h2 class="section__title font">Почему сосредоточиться так сложно</h2>
-        <article class="about-column">
+        <div class="about-alternate">
           <article class="about">
             <h3 class="about__title title-decor font">Многозадачность</h3>
             <p class="about__text">
@@ -87,53 +87,57 @@
               отвлекаешься, тем больше удовольствия получаешь.
             </p>
           </article>
-        </article>
+        </div>
       </section>
-      <section class="section section-row">
-        <h2 class="section__title font accent-section">
+      <section class="section section-alternate">
+        <h2 class="section__title font title-accent section__title-accent">
           Что снижает концентрацию внимания?
         </h2>
         <article class="about about-accent">
-          <h3 class="about__title title-decor font">Многозадачность</h3>
-          <p class="about__text">
-            Как концентрация может снижаться из-за… концентрации? Любая
-            стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш
-            мозг постоянно «сканировать» окружающую среду на предмет опасности.
-            Например, читать новости вместо работы. Но быть собранными всё время
-            — невозможно. Концентрация — мышца, и она может не выдержать, если
-            не давать ей отдохнуть.
-          </p>
+          <ul class="card__list">
+            <li class="card__list-item">
+              <h3 class="about__title title-decor font">Многозадачность</h3>
+              <p class="about__text">
+                Как концентрация может снижаться из-за… концентрации? Любая
+                стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш
+                мозг постоянно «сканировать» окружающую среду на предмет опасности.
+                Например, читать новости вместо работы. Но быть собранными всё время
+                — невозможно. Концентрация — мышца, и она может не выдержать, если
+                не давать ей отдохнуть.
+              </p>
+            </li>
+            <li class="card__list-item">
+              <h3 class="about__title title-decor font">Еда</h3>
+              <p class="about__text">
+                «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
+                доставляют в мозг энергию и помогают ему лучше работать. Но уходит
+                эта энергия также быстро, как и приходит. А мы в результате попадаем
+                на «углеводные качели»: как только действие «быстрых углеводов»
+                заканчивается, мы чувствуем усталость и сонливость. И хотим ещё
+                больше быстрых углеводов.
+              </p>
+            </li>
+            <li class="card__list-item">
+              <h3 class="about__title title-decor font">Гаджеты</h3>
+              <p class="about__text">
+                Да-да, это та самая ситуация, когда на экране ноутбука — код, в
+                наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными
+                утятами. В результате мозг пытается переключиться с одной задачи на
+                другую — и просто не может. А чтобы вернуться к состоянию полной
+                концентрации, человеку в среднем нужно 20 минут. Вот и получается,
+                что чем больше времени мы проводим в гаджетах, тем больше времени
+                затем нужно, чтобы вернуться к работе.
+              </p>
+            </li>
+        </ul>
         </article>
-        <article class="about about-accent">
-          <h3 class="about__title title-decor font">Еда</h3>
-          <p class="about__text">
-            «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
-            доставляют в мозг энергию и помогают ему лучше работать. Но уходит
-            эта энергия также быстро, как и приходит. А мы в результате попадаем
-            на «углеводные качели»: как только действие «быстрых углеводов»
-            заканчивается, мы чувствуем усталость и сонливость. И хотим ещё
-            больше быстрых углеводов.
-          </p>
-        </article>
-        <article class="about about-accent">
-          <h3 class="about__title title-decor font">Гаджеты</h3>
-          <p class="about__text">
-            Да-да, это та самая ситуация, когда на экране ноутбука — код, в
-            наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными
-            утятами. В результате мозг пытается переключиться с одной задачи на
-            другую — и просто не может. А чтобы вернуться к состоянию полной
-            концентрации, человеку в среднем нужно 20 минут. Вот и получается,
-            что чем больше времени мы проводим в гаджетах, тем больше времени
-            затем нужно, чтобы вернуться к работе.
-          </p>
-        </article>  
       </section>
-      <section class="section section-column">
+      <section class="section section-accent">
         <h2 class="section__title font">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <article class="about-column">
+        <div class="about-alternate">
           <h3 class="about__title title-decor font">
             5 простых (на самом деле не очень) советов
           </h3>
@@ -193,7 +197,7 @@
               несколько часов и круто тренирует направленное внимание.
             </p>
           </article>
-        </article>
+        </div>
       </section>
       <section class="section__gallery">
         <h2 class="about__title title-decor font">А можно в картинках?</h2>
