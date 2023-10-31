@@ -194,6 +194,10 @@
 
 .section__gallery {
   display: grid;
+  gap: 10px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  margin-block-end: 40px;
 }
 
 .image__container {
@@ -257,13 +261,6 @@
     margin-block-start: 40px;
   }
 
-  .section__gallery {
-    gap: 10px;
-    padding-inline-start: 10px;
-    padding-inline-end: 10px;
-    margin-block-end: 40px;
-  }
-
   .image__container {
     gap: 10px;
   }
@@ -295,10 +292,6 @@
 
   .header__theme-menu-list {
     grid-template-columns: auto auto auto;
-  }
-
-  .header__title {
-    text-shadow: 4px 4px 0 var(--accent-header-text-shadow);
   }
 
   .section-alternate {
