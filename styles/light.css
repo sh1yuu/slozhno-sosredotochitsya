@@ -25,16 +25,6 @@
   display: none;
 }
 
-@media (375px < width < 1024px) {
-  .header__title {
-    text-shadow: 4px 4px 0 var(--alternate-bg-color);
-  }
-
-  .footer__title {
-    text-shadow: 4px 4px 0 var(--alternate-bg-color);
-  }
-}
-
 @media (min-width: 1024px) {
   .header__title {
     text-shadow: 4px 4px 0 var(--accent-header-text-shadow);
